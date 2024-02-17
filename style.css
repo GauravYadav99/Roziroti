@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 131px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.navbar {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    padding: 0px 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #1A4122;
+    text-transform: uppercase;
+    font-family: "futura-pt", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 2.1px;
+    font-style: normal;
+    font-weight: 450;
+    transition: all 0.5s ease;
+}
+.navbar ul li a:hover {
+    color: #C15627;
+}
+
+.navbar ul li.logo {
+    width: 191px;
+    min-width: 160px;
+    height: 43px;
+    text-align: center;
+    background-image: url(../images/24carrots.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    margin: 0 12%;
+    left: 40px;
+}
+
+.navbar ul li.contact-btn a {
+    color: #FFF;
+    background-color: #C15627;
+    border-radius: 30px;
+    padding: 10px 13px;
+    text-wrap: nowrap;
+    position: relative;
+    transition: .5s;
+    font-size: 13px;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li.contact-btn a:hover {
+    background-color: #d16c41;
+}
+
+/* main section */
+
+main {
+    position: relative;
+    top: 131px;
+    width: 100%;
+    display: block;
+}
+
+.video-wrapper {
+    overflow: hidden;
+    height: 50vw;
+    min-height: 550px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.video-wrapper video {
+    width: 100%;
+}
+
+.msg-wrapper {
+    position: absolute;
+    top: 0;
+    height: 50vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.msg-wrapper h2 {
+    max-width: 900px;
+    font-size: 7rem;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
+/* catering section */
+
+.catering-section {
+    position: relative;
+    width: 100%;
+}
+
+.catering-container {
+    width: 100%;
+    display: flex;
+}
+
+.catering-description, .catering-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.catering-description {
+    flex-basis: 50%;
+    flex-direction: column;
+    padding: 120px 150px;
+}
+ .catering-description h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    letter-spacing: 3.6px;
+    line-height: 100%;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #647B4E;
+    font-family: 'Rustica', sans-serif;
+    padding-top: 20px;
+ }
+ .catering-description h2 {
+    font-size: 100px;
+    font-family: "F37 Caslon", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 92%;
+    letter-spacing: -3px;
+    margin-bottom: 24px;
+    color: #1A4122;
+    max-width: 490px;
+ }
+
+ .catering-description p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+    line-height: 140%;
+    color: #1A4122;
+    max-width: 490px;
+    margin: 30px auto;
+    font-family: "futura-pt", sans-serif;
+    text-align: center;
+ }
+
+ .catering-description p a{
+    text-decoration: none;
+    font-family: "futura-pt", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    background-color: #C15627;
+    border-radius: 30px;
+    padding: 10px 60px 10px 40px;    
+    color: #FFF;
+    transition: .2s;
+    cursor: pointer;
+    text-align: center;
+ }
+
+.catering-img {
+    flex-basis: 50%;
+    padding: 120px 0;
+}
+
+.catering-img img {
+    width: 100%;
+    height: 78vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 45% 0 0 0;
+}
